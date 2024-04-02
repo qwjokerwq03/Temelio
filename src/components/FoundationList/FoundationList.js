@@ -6,7 +6,7 @@ import './FoundationList.css'; // Import the CSS file for styling
 const FoundationList = () => {
   const [foundations, setFoundations] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(5);
+  const [itemsPerPage] = useState(15);
 
   useEffect(() => {
     fetchFoundations();
@@ -81,7 +81,7 @@ const Pagination = ({ itemsPerPage, totalItems, paginate }) => {
       <ul className="pagination">
         {pageNumbers.map(number => (
           <li key={number} className="page-item">
-            <a onClick={() => paginate(number)} href="/foundations" className="page-link">
+            <a onClick={() => paginate(number)} href="#!" className="page-link">
               {number}
             </a>
           </li>

@@ -9,7 +9,7 @@ const SideNav = () => {
           <ul>
             <li><NavLink exact to="/dashboard" activeClassName="active">Dashboard</NavLink></li>
             <li><NavLink to="/email-template" activeClassName="active">Email Template</NavLink></li>
-            <li><NavLink to="/send-emails" activeClassName="active">Send Emails</NavLink></li>
+            {/* <li><NavLink to="/send-emails" activeClassName="active">Send Emails</NavLink></li> */}
             <li><NavLink to="/sent-emails" activeClassName="active">Sent Emails</NavLink></li>
             <li><NavLink to="/foundations" activeClassName="active">Foundations</NavLink></li>
             <li><NavLink to="/nonprofits" activeClassName="active">Nonprofits</NavLink></li>
