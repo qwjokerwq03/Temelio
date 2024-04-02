@@ -1,0 +1,55 @@
+.nonprofit-list-container {
+    margin-top: 20px;
+    padding: 0px 20px;
+  }
+  
+  .nonprofit-list-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .nonprofit-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .nonprofit-table th, .nonprofit-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .nonprofit-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .delete-icon {
+    opacity: 1;
+    color: #ff0000;
+    cursor: pointer;
+  }
+  
+  .delete-icon:hover {
+    color: #cc0000;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination li {
+    list-style-type: none;
+    margin: 0 5px;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+  }
+  
+  .pagination a:hover {
+    background-color: #f0f0f0;
+  }
+  
