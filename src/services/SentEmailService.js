@@ -27,6 +27,15 @@ const SentEmailService = {
     } catch (error) {
         console.error('Error while getting email template', error);
     }
+  },
+
+  updateEmailTemplate: async (body) => {
+    try {
+      const response = await api.put(API_EMAILS_ENDPOINT+"/update-template",body);
+      return response.data;
+    } catch (error) {
+      console.error('Error while updating email template', error);
+    }
   }
 };
 export default SentEmailService;

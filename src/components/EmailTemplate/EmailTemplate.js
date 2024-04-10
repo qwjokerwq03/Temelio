@@ -30,9 +30,14 @@ const EmailTemplate = () => {
     setIsEditing(true);
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     // Update email template in the database
     // Add code to send updated template to the API
+    const response = await SentEmailService.updateEmailTemplate({"subject" : subject, "body" : body});
+    const data = await response;
+    setSubject(data.subject);
+    setBody(data.body);
+    setTemplate("Subject:"+data.subject + '\n\n' + data.body);
     setIsEditing(false);
   };
 

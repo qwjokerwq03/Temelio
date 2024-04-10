@@ -48,7 +48,7 @@ const FoundationList = () => {
         <tbody>
           {currentItems.map(foundation => (
             <tr key={foundation.email} className="foundation-row">
-              <td>{foundation.email.split('@')[0]}</td>
+              <td>{foundation.email.split('@')[0].replaceAll('.',' ')}</td>
               <td>{foundation.email}</td>
               <td className='delete-icon'>
                 <FaTrash
